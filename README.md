@@ -13,6 +13,7 @@
 # Asynchronous Replication
 # Now add this config to master mysql server inside /etc/my.cnf (it must be under the [mysqld] section):
 << vi /etc/my.cnf
+
 #-----------------------------------------
 ##Compatibility
 default-authentication-plugin = mysql_native_password
@@ -34,11 +35,15 @@ super_read_only = OFF # Set ON on slave
 master_info_repository = TABLE
 relay_log_info_repository = TABLE
 relay_log_recovery = ON
+
+
 #-------------------------------------------------##
 
 3. ### Now add this config to SLAVE-MYSQL server inside /etc/my.cnf (it must be under the [mysqld] section):
 <<vi /etc/my.cnf
+
 #-----------------------------------------
+
 ##Compatibility
 default-authentication-plugin = mysql_native_password
  
@@ -59,6 +64,7 @@ super_read_only = ON # Set ON on slave
 master_info_repository = TABLE
 relay_log_info_repository = TABLE
 relay_log_recovery = ON
+
 #-------------------------------------------------
 
 # Setting up the Replication Link
