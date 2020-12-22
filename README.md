@@ -3,12 +3,15 @@
 # percona Installation packages.
 
 << yum -y install https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+
 << percona-release setup ps80
 
 # Then install the latest Percona Server and Percona Xtrabackup
 
 << yum -y install percona-server-server percona-xtrabackup-80
+
 << systemctl enable mysql
+
 << systemctl start mysql
 
 # change the root password 
