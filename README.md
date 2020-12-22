@@ -34,7 +34,7 @@ super_read_only = OFF # Set ON on slave
 master_info_repository = TABLE
 relay_log_info_repository = TABLE
 relay_log_recovery = ON
-#-------------------------------------------------
+#-------------------------------------------------##
 
 3. ### Now add this config to SLAVE-MYSQL server inside /etc/my.cnf (it must be under the [mysqld] section):
 <<vi /etc/my.cnf
