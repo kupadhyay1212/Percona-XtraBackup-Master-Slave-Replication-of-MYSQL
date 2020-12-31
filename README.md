@@ -131,9 +131,5 @@ relay_log_recovery = ON
 << SHOW MASTER STATUS\G
 
 ------------------------------------------------------THE END--------------------------------------------------------------------
-
-# Reference;  https://severalnines.com/database-blog/how-deploy-percona-server-mysql-high-availability
-
-
-# 2nd :  https://www.percona.com/doc/percona-xtrabackup/2.3/howtos/setting_up_replication.html
+#  :  https://www.percona.com/doc/percona-xtrabackup/2.3/howtos/setting_up_replication.html
 
